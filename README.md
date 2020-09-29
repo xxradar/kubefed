@@ -129,13 +129,13 @@ EOF
 helm init --service-account tiller
 ```
 
-### install kubefed
+### Install kubefed
 Check available versions ...
 ```
 helm repo add kubefed-charts https://raw.githubusercontent.com/kubernetes-sigs/kubefed/master/charts
 helm search kubefed
 ```
-...and install ...(make sure a recent version is used)
+... and install ...(make sure a recent version is used)
 ```
 helm install  kubefed-charts/kubefed  --name=kubefed  --version=0.3.1 --namespace kube-federation-system --devel --debug
 ```
