@@ -1,5 +1,5 @@
 # Kubefed quickstart
-This quickstarts will setup 3 K8S clusters. I used managed K8S clusters on Digitaloceans (latest version)
+This quickstart will setup 3 K8S clusters. I used managed K8S clusters on Digitaloceans (latest version)
 
 
 ### Verify access to all 3 clusters
@@ -20,7 +20,7 @@ kubectl get no
 kubectl config use-context do-ams3-demo-cluster-man1
 kubectl get no
 ```
-Make sure the default context is set towards the management clusters
+Make sure the default context is set towards the management cluster.
 
 ```
 kubectl config use-context do-ams3-demo-cluster-man1
@@ -130,7 +130,7 @@ helm init --service-account tiller
 ```
 
 ### install kubefed
-check available versions ...
+Check available versions ...
 ```
 helm repo add kubefed-charts https://raw.githubusercontent.com/kubernetes-sigs/kubefed/master/charts
 helm search kubefed
@@ -213,7 +213,7 @@ spec:
     - name: do-ams3-demo-cluster-test2
 EOF
 ```
-... and verify successful deploypent ...
+... and verify successfull deployment ...
 ```
 kubectl get deployment -n test-namespace --context do-ams3-demo-cluster-test1
 kubectl get deployment -n test-namespace --context do-ams3-demo-cluster-test2
