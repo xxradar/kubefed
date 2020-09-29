@@ -1,13 +1,6 @@
 # Kubefed quickstart
-This quickstarts will setup 3 K8S clusters (latest version 1.19).
+This quickstarts will setup 3 K8S clusters. I used managed K8S clusters on Digitaloceans (latest version)
 
-### Setup 3 clusters
-
-```
-./env_create.sh man1
-./env_create.sh test1
-./env_create.sh test2
-```
 
 ### Verify access to all 3 clusters
 
